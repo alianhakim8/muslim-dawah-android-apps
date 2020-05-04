@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MuslimDawah</string>
+    <string name="title_1">Muslim</string>
+    <string name="title_2">Da\'wah</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="account_access">Dont\' Have Account ?</string>
+    <string name="sign_in">Log in</string>
+    <string name="sign_up">Create an account</string>
+    <string name="remember">Remember me?</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sigin_option">Or sign in with</string>
+    <string name="google_plus_description">Google Plus</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="description">Social Media For Da\'wah</string>
+    <string name="desc_background">background</string>
+    <string name="sign_in_start">SIGN IN</string>
+    <string name="username">Username</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="Sign_up">Sign Up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="add">Add</string>
+    <string name="user">User</string>
+</resources>
