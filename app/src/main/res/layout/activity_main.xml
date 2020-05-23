@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
+    tools:context=".activity.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,10 +26,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/windowBackground"
-        app:itemIconTint="@color/selection"
+        app:itemIconTint="@drawable/selector_bottombar_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation" />
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_navigation"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

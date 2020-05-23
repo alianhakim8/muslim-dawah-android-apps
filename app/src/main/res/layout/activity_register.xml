@@ -6,9 +6,8 @@
     android:layout_height="match_parent">
 
     <ImageView
-
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="@dimen/image"
+        android:layout_height="@dimen/image"
         android:contentDescription="@string/desc_background"
         android:src="@drawable/icon"
         app:layout_constraintEnd_toEndOf="parent"
@@ -17,8 +16,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="@dimen/marginStartEnd"
+        android:layout_marginEnd="@dimen/marginStartEnd"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,96 +27,99 @@
 
         <!--sign up Title App -->
         <TextView
-            android:id="@+id/headtitle"
+            android:id="@+id/headTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/marginBottomTextView"
+            android:layout_marginBottom="@dimen/MarginTop"
             android:text="@string/sign_up"
             android:textAlignment="center"
             android:textColor="@color/selection"
-            android:textSize="20dp"
+            android:textSize="@dimen/registerTextView"
             android:textStyle="bold" />
 
         <!-- email input text -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email_input"
             android:layout_width="match_parent"
+            android:padding="@dimen/textInputLayoutPadding"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            app:errorEnabled="true">
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:id="@+id/email_register"
                 android:hint="@string/email"
-                android:inputType="textEmailAddress" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border_edittext"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/textInputLayoutPadding" />
 
+        </com.google.android.material.textfield.TextInputLayout>
         <!-- username input text -->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/username_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:counterEnabled="true"
             app:counterMaxLength="15"
-            app:errorEnabled="true">
+            android:padding="@dimen/textInputLayoutPadding"
+            app:errorEnabled="true"
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:id="@+id/username_register"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border_edittext"
                 android:hint="@string/username"
-                android:inputType="text" />
+                android:padding="@dimen/textInputLayoutPadding" />
+
         </com.google.android.material.textfield.TextInputLayout>
 
         <!--password input text-->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="@dimen/textInputLayoutPadding"
+            app:hintEnabled="false"
             app:passwordToggleEnabled="true">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/password_register"
+                android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:background="@drawable/rounded_border_edittext"
                 android:hint="@string/password"
-                android:inputType="textPassword" />
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="@dimen/textInputLayoutPadding" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!--confirm password input text-->
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/confirm_password_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="@dimen/textInputLayoutPadding"
+            app:hintEnabled="false"
             app:passwordToggleEnabled="true">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/confirm_password_register"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border_edittext"
                 android:hint="@string/confirm_password"
-                android:inputType="textPassword" />
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:padding="@dimen/textInputLayoutPadding" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/signUp_btn"
-            android:layout_width="147dp"
-            android:layout_height="43dp"
+            android:id="@+id/register_button"
+            android:layout_width="@dimen/btnWidth"
+            android:layout_height="@dimen/btnHeight"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/marginTop"
             android:background="@drawable/btn_rounded_ripple"
-            android:onClick="signUpButtonOnClick"
             android:text="@string/Sign_up"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />
@@ -128,7 +130,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/marginTop"
             android:text="@string/sigin_option" />
 
         <!-- social icon -->
@@ -137,31 +139,32 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="@dimen/marginTop"
             android:gravity="center">
 
             <ImageView
                 android:id="@+id/google_icon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
                 android:contentDescription="@string/google_plus_description"
                 android:src="@drawable/ic_google_icon" />
 
             <ImageView
                 android:id="@+id/facebook_icon"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="@dimen/icon"
+                android:layout_height="@dimen/icon"
                 android:layout_marginStart="5dp"
+                android:contentDescription="@string/facebook_icon"
                 android:src="@drawable/ic_facebook_icon" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/to_sign_in"
+            android:id="@+id/login_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="@dimen/marginTop"
             android:text="@string/sign_in"
             android:textColor="@color/selection"
             android:textStyle="bold" />

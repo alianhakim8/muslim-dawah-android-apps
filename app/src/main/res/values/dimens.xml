@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--global dimension-->
+    <dimen name="btnWidth">147dp</dimen>
+    <dimen name="btnHeight">43dp</dimen>
+    <dimen name="textInputLayoutPadding">10dp</dimen>
+    <dimen name="icon">30dp</dimen>
+    <dimen name="image">100dp</dimen>
+
+
+    <!--SplashScreen-->
+    <dimen name="splashScreen">200dp</dimen>
+
+    <!--Login activity-->
+    <dimen name="marginStartEnd">36dp</dimen>
+    <dimen name="marginBottomTextView">20dp</dimen>
+    <dimen name="loginTextView">30dp</dimen>
+    <dimen name="MarginTop">30dp</dimen>
+    <dimen name="marginStartCheckBox">5dp</dimen>
+
+    <!--Register Activity-->
+    <dimen name="registerTextView">25dp</dimen>
+    <dimen name="marginTop">20dp</dimen>
+
+    <!--fragment User-->
+    <dimen name="containerPadding">10dp</dimen>
+    <dimen name="marginRightButton">10dp</dimen>
+    <dimen name="usernameTextView">18sp</dimen>
+    <dimen name="BtnWidth">127dp</dimen>
+    <dimen name="BtnHeight">30dp</dimen>
+</resources>
